@@ -1,0 +1,15 @@
+.button--green{
+    // @include styleText($color-white-1,$fs-0,$fw-0);
+    // border: 1px solid $color-green-0;
+    // width:$width-2 ;
+    // height: $height-0;
+    // border-radius:$fs-1;
+    // background-color:$color-green-0 ;
+    @include styleButton($color-white-1,$fs-0,$fw-0,$color-green-0,$fs-1,$fd-0,$fd-1);
+}
+.button--carousel{
+    @include styleButton($color-white-1,$fs-0,$fw-0,$color-green-0,$lh-3,$fd-8,$fd-9);
+    span{
+        padding-right:$fd-2 - 1 ;
+    }
+}

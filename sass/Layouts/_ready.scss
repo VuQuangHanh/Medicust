@@ -1,0 +1,198 @@
+.ready{
+    background-image: url("../img/Bg (1).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:$height-6;
+    position: relative;
+    .ready__content{
+        width: 70%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        .ready__items{
+            padding-right: $height-1;
+            .ready__left{
+                background-color: $color-white-0;
+                text-align: left;
+                padding:$fs-3 - 2 $fs-5 + 1 ;
+                border-radius:$border-radius - 4 ;
+                h2{
+                    @include styleText($color-blue-0,$fs-5,$fw-1);
+                    padding-bottom: $fs-6;
+                }
+                .ready__number{
+                    i{
+                       @include Icon($fd-10 - 3);
+                       font-size:$fs-1 - 1 ;
+                       background-color: $color-green-0;
+                       margin-right:$fd-2; 
+
+
+                    }
+                    span{
+                        @include styleText($color-green-0,$fs-1,$fw-1);
+                    }
+                
+                }
+                .ready__email{
+                    i{
+                        @include Icon($fd-10 - 3);
+                        font-size:$fs-1 - 1 ;
+                        background-color: $color-orange-0;
+ 
+ 
+                     }
+                     span{
+                         @include styleText($color-green-0,$fs-1,$fw-1);
+                         margin-right: $fd-4;
+                     }
+                }
+            }
+
+        }
+        .ready__right{
+            h4{
+                @include styleText($color-white-0,$fs-1,$fw-1);
+
+            }
+            p{
+                color: $color-white-0;
+                padding:$fs-1 0 $fs-7 - 5;
+            }
+           .ready__phone{
+            
+            .ready__phoneLeft{
+                i{
+                    font-size:$fs-3 - 2 ;
+                    padding-right:$fs-5 ;
+                    color: $color-white-0;
+                }
+            }
+            .ready__phoneRight{
+               p:first-child{
+                @include styleText($color-white-0,$fs-6,$fw-1);
+                padding: 0;
+                margin: 0;
+               }  
+               p:last-child{
+                @include styleText($color-white-0,$fs-2,$fw-0);
+                padding: 0;
+                margin: 0;
+               }
+            }
+           }
+        }
+    }
+    @include responsive("screen"){
+        .ready__content{
+            width: 90%;
+            margin: auto;   
+        }
+        
+    }
+    @include responsive("large"){
+         .ready__content{
+            .ready__items{
+                padding-right: $fs-1 - 4;
+                .ready__left{
+                    padding: $fs-1 - 4 $fs-2 + 1;
+                    .ready__number{
+                        i{
+                           
+                           margin-right:$fd-4 - 4; 
+    
+    
+                        }
+                    }
+                    .ready__email{
+                        span{
+                            margin-right:$fd-4 - 4 ;
+                            font-size: $fs-1 - 2;
+                        }
+                    }
+                }
+                
+
+         }
+         .ready__right{
+            p{
+                padding:0;
+            }
+        }
+    }
+}
+    @include responsive("medium"){
+        .ready__content{
+            .ready__items{
+                padding-top:$fs-1 - 4;
+                .ready__left{
+                    padding:$fs-0 - 3 $fs-0 + 2 ;
+                    h2{
+                        padding-bottom: 0;
+                    }
+        
+                } 
+                
+
+        } 
+        .ready__right{
+            h4{
+                @include styleText($color-white-0,$fs-1 - 4,$fw-1);
+
+            }
+            p{
+                color: $color-white-0;
+                padding: 0;
+                margin-bottom: 0;
+            }
+           .ready__phone{
+            
+            .ready__phoneLeft{
+                i{
+                    font-size:$fs-3 - 2 ;
+                    padding-right:$fs-5 ;
+                    color: $color-white-0;
+                }
+            }
+            .ready__phoneRight{
+               p:first-child{
+                @include styleText($color-white-0,$fs-6 - 8,$fw-1);
+                padding: 0;
+                margin: 0;
+               }  
+               p:last-child{
+                @include styleText($color-white-0,$fs-2 - 2,$fw-0);
+                padding: 0;
+                margin: 0;
+               }
+            }
+           }
+
+    }
+    }
+}
+@include responsive("small"){
+    
+    height:$height-7;
+    .ready__content{
+        .ready__items{
+            padding-top:$fs-1 - 4;
+            .ready__left{
+                .ready__email{
+                    span{
+                        font-size:$fs-10 ;
+                    }
+                }
+    
+            } 
+            
+
+    } 
+    
+  
+}
+}
+}

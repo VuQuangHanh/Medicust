@@ -1,0 +1,88 @@
+.patient{
+    .patient__content{
+        
+        width: 70%;
+        margin: auto;
+        .owl-carousel{
+            .owl-stage-outer{
+                overflow: visible;   
+            }
+            
+       
+
+        }
+        .patient-carousel{
+            
+            .patient__card{
+               
+                border: 1px solid $color-white-4;
+                box-shadow: 0 0 1px 1px $color-white-5 ;
+                border-radius: $fd-3;
+                padding: $fs-1 - 4 $fs-5 - 2;
+                
+
+              
+              .patient__bottom{
+                position: relative;
+                .patient__medium{
+                    padding:$fs-1 - 4 0;
+                    .patient__mediumLeft{
+                        h3{
+                            @include styleText($color-blue-0,$fs-4,$fw-1);
+                        }
+                        p{
+                            @include styleText($color-green-0,$fs-0 - 2,$fw-3);
+                        }
+                    }
+                    .patient__mediumRight{
+                        margin-right:$fs-1 ;
+                        i{
+                            color: $color-orange-0;
+                            font-size: $fs-0 - 2;  
+                        }
+                        
+                    }
+                  }
+                  h4{
+                    @include styleText($color-blue-0,$fs-9,$fw-1);
+                  }
+                  p{
+                    @include styleText($color-gray-0,$fs-0,$fw-3);
+                  }
+              }  
+              .patient__top{
+                .patient__topItem{
+                    width: $height-8;
+                    height: $height-8;
+                    border-radius: 50%;
+                    background-color: $color-gray-1;
+                    position: absolute;
+                    top: -9%;
+                    left: 10%; 
+                    
+                }
+                
+                i{
+                    @include Icon($fd-1 + 4);
+                    margin-right: $fs-4;
+                    background-color:$color-green-0 ;
+                    color: $color-white-0;
+                    position: absolute;
+                    top: -5%;
+                    right: 10%; 
+                   
+                }
+              }
+              
+            }
+
+           
+        
+        }
+        @include responsive("small-screen"){
+            .owl-nav{
+                display: none;
+            }
+        }
+    }
+}

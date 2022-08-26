@@ -1,0 +1,26 @@
+@import './Helpers/variables';
+@import './Helpers/mixin';
+@import './Helpers/extend';
+
+//Vedors
+
+@import './Bake/costomize';
+@import './Bake/reset';
+
+@import './Layouts/header';
+@import './Layouts/footer';
+@import './Layouts/medicustcarousel';
+@import './Layouts/contact';
+@import './Layouts/department';
+@import './Layouts/trustus';
+@import './Layouts/care';
+@import './Layouts/ready';
+@import './Layouts/patient';
+@import './Layouts/single';
+
+@import './components/button';
+@import './components/card';
+
+
+@import './Page/home';
+//Theme

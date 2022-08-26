@@ -1,0 +1,79 @@
+.department{
+   
+    background-color:$color-white-2 ;
+    padding-bottom: $height-2;
+   .department__content{
+    width: 70%;
+    margin: auto;
+    .department__bottom{
+        text-align: center;
+        width: 100%;
+        .deparment__items{
+            padding: 0;
+            .deparment__service{
+                position: relative;
+                background-color:$color-white-0 ;
+                border: 2px solid $color-gray-4;
+                padding:$fd-9 $fs-9 ;
+                .deparment__serviceIcon{
+                    width:$width-6 ;
+                    height: $width-6;
+                    border-radius: 50%;
+                    background-color: $color-gray-3;
+                    img{
+                        position: absolute;
+                        top: 32%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                  
+                    .deparment__img2{
+                        width:$fs-5 + 2 ;
+                        height:$fs-6 - 2 ;
+                    }
+                    .deparment__img3{
+                        width:$fs-5 + 2 ;
+                        height:$height-3 ;
+                    }
+                    .deparment__img4{
+                        width:$fs-6 ;
+                        height:$fs-5 + 2 ;
+                    }
+                    .deparment__img5{
+                        width:$fs-5 + 2 ;
+                        height:$fs-5 + 2 ;
+                    }
+                    .deparment__img7{
+                        width: $height-3;
+                        height:$fs-5 + 2 ;
+                    }
+                    .deparment__img8{
+                        width: $height-3 + 2;
+                        height:$fs-5 + 2 ;
+                    }
+                }
+                p{
+                    @include styleText($color-blue-0,$fs-1 - 1,$fw-1);
+                    margin: 0;
+                    padding-top: $height-0 - 2;
+                }
+                &:hover{
+                    border:2px solid $color-green-0;
+                }
+                &.active{
+                    border: 2px solid $color-green-0;
+                    .deparment__serviceIcon{
+                        background-color: $color-green-0;
+                    }
+                }
+            }
+        }
+        
+    }
+    @include responsive("screen"){
+        width: 90%;
+        margin: auto;
+    }
+   }
+
+}

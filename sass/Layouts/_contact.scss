@@ -1,0 +1,28 @@
+.contact{
+
+    .contact__content{
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding:$fs-3 0 ;
+        .contact__text{
+            max-width:$width-4 ;
+            p{
+                @include styleText($color-blue-0,$fs-5,$fw-1);
+            }
+            span{
+                @include styleText($color-green-0,$fs-5,$fw-1);
+            }
+        }
+        
+    }
+    @include responsive("screen"){
+        .contact__content{
+            width: 90%;
+        margin: auto;
+        }
+        
+    }
+   
+}

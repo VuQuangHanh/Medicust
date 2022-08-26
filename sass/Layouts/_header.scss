@@ -1,0 +1,120 @@
+header{
+    .header__content{
+        
+        .header__top{
+            width: 70%;
+            margin: auto;
+            padding:$fd-2 0; 
+        @include styleText($color-blue-0,$fs-0,$fw-0);
+        i{
+            // font-size: $fs-4;
+            color: $color-green-0;
+            width: $width-1;
+        }
+        span{
+            margin-left:$mg-0 ;
+            a{
+                color: $color-blue-0;
+            }
+        }
+        .email{
+            a{
+                text-decoration: none;
+                
+            }
+        }
+        }
+        .header__bottom{
+            background-image: url("../img/Bg.png");
+            @extend %backgroundImg;
+            
+   
+            .navbar{
+                // background-color: $color-green-0;
+                width: 70%;
+                margin: 0 auto;
+                padding:$fd-4 0 $fd-3 ;
+                
+                a{
+                    img{
+                        width:$width-0 ;
+                    }
+                }
+                
+                #navbarMedicust{
+                    padding-left:$fd-5 ;
+                   
+                    
+                    .navbar-nav{
+                        .nav-item{
+                            margin-right: $mg-1;
+                        }
+                        .nav-link{
+                            @include styleText($color-white-1,$fs-2,$fw-0)
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+    @include responsive("screen"){
+        .header__content{
+        
+            .header__top{
+                width: 90%;
+            }
+            .header__bottom{
+                .navbar{
+                    width: 90%;
+                    .navbar-toggler{
+                        background-color: $color-white-0;
+                        text-align: center;
+                        line-height:$lh-3;
+                        width: $height-0;
+                        height: $height-0;
+                        border:1px solid $color-white-0;
+                        &:focus{
+                            outline: none;
+                        }
+                        span{
+                            color: black;
+                        }
+                    }
+                }
+            }
+    }
+    }
+    @include responsive("Extra large"){
+        
+            .header__content{
+                .header__bottom{
+                    .navbar{
+                        #navbarMedicust{
+                            padding-left:$fd-6;
+                            .navbar-nav{
+                                .nav-item{
+                                    margin-right:$fd-7 ;
+                                }
+
+                            }
+                            
+                        }
+                    }
+                    
+
+                }
+            }
+    }                                  
+    // @media screen and (min-width:768px) and (max-width:992px){
+    //     .header__items{
+    //         text-align: center;
+    //     }
+    // }
+    @include responsive("large"){
+       .button--green{
+        display: none;
+       } 
+    }
+    
+}

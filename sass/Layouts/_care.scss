@@ -1,0 +1,55 @@
+.care{
+    .care__content{
+        width: 70%;
+        margin: auto;
+        .care__bottom{
+        
+            .care__space{
+                padding: $fd-0;
+                .care__item{
+                    background-color:$color-gray-1 ;
+                    border: 2px solid $color-gray-4;
+                   
+                    height:$height-5 ;
+                    border-radius: $fd-3;
+                    padding:0; 
+                }
+                
+            }
+            
+            .care__text{
+                padding: $fd-10 $fs-10 + 2;
+                background-color:$color-green-0; 
+                height:$height-5 ;
+                text-align: center;
+                
+                h4{
+                    @include styleText($color-white-0,$fs-10 + 1,$fw-1 );
+                }
+                p{
+                    @include styleText($color-white-0,$fs-0,$fw-3);
+                    padding:$fs-10 - 5 0 ;
+                    
+                }
+                i{
+                   font-size:$fs-0 ;
+                   color: $color-white-0; 
+                   width: $height-0 + 3;
+                   height:$height-0 + 3 ;
+                   border-radius: 50%;
+                   background-color:$color-orange-0 ;
+                   line-height:$height-0 + 3 ;
+                   text-align: center;
+    
+    
+                }
+            }
+            
+        }
+        @include responsive ("screen"){
+            width: 90%;
+            
+        }
+    }
+    
+}

@@ -1,0 +1,55 @@
+.medicustcarousel{
+    // background:  color url() position/ng-size bg-repeat
+
+    position: relative;
+    // background: $color-gray-1 url('../img/Shape.png') -24vw -34vh /62% no-repeat;
+    height: 840px;
+    background-color: $color-gray-1;
+    overflow: hidden;
+
+   .medicustcarousel__content{
+    .medicustcarousel__img{
+        position: absolute;
+        top: -29%;
+        left: -17%;
+        
+    }
+    .div__item{
+        max-width:450px ;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        transform: translateY(-50%);
+        p:first-child{
+            @include styleText($color-green-0,$fs-10,$fw-0);
+            font-family:'Roboto', sans-serif; 
+        }
+        h2{
+            @include styleText($color-blue-0,$fs-3,$fw-1);
+        }
+        p:last-of-type{
+            @include styleText($color-gray-0,$fs-4,$fw-3);
+            font-family:'Roboto', sans-serif; 
+        }
+
+
+        
+    }
+   } 
+   @include responsive("screen"){
+    .medicustcarousel__content{
+        .div__item{
+            left:5%;
+        }  
+    }
+   }
+   @media screen and (max-width:321px){
+    .medicustcarousel__content{
+        .div__item{
+            h2{
+                @include styleText($color-blue-0,$fs-5,$fw-1);
+            }
+        }
+    }
+   }
+}
