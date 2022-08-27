@@ -1,0 +1,150 @@
+.carouselContactUs{
+    background-color: $color-gray-1;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    img{
+        
+        position: absolute;
+       
+        top: -92%;
+        left: 0;
+    }
+    .carouselContact__content{
+        width: 70%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        h2{
+          @include styleText($color-blue-0,$height-0 - 2,$fw-1); 
+          padding-bottom:$fs-1 ; 
+        }
+        .carouselContactus__item{
+            span{
+                a{
+                    text-decoration: none;
+                    font-size: $fs-2 + 2;
+                    font-weight: $fw-0;
+                    
+                }
+            }
+            span:first-child{
+                a{
+                    color: $color-blue-0;
+                }
+            }
+            span:nth-of-type(2){
+                padding: 0 $fd-3;
+            }
+            span.active{
+                a{
+                    color: $color-green-0;
+                }
+            }
+        }
+        @include responsive("screen"){
+            width: 90%;
+            margin: auto;
+        }
+    }
+ }
+//  Phone
+ .phone{
+    width: 70%;
+    margin: $fs-3 auto;
+    .phone__item{
+        i{
+            @include icon($width-5);
+            background-color:$color-gray-7 ;
+            color:$color-green-0 ;
+            font-size: $fs-1;
+        }
+        .phone__itemRight{
+            margin-left: $fs-1;
+            h4{
+                @include styleText($color-blue-0,$fs-2,$fw-1);
+            }
+            p{
+                color:$color-gray-8 ;
+            }
+        }
+    }
+    @include responsive("sreen"){
+        width: 90%;
+    }
+ }
+//  Form
+.form{
+   .form__content{
+    width: 70%;
+    margin: auto;
+    margin-bottom: $width-2;
+    .form__bottom{
+        input{
+            @include styleInput($color-gray-9,$width-3,$fd-11,$fd-12,$fd-11,$fs-1);
+            margin-bottom: $fs-1;
+            border: none;
+            &.active{
+                border: 1px solid $color-blue-1;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        textarea{
+            background-color: $color-gray-9;
+    width: 680px;
+    height:225px ;
+    padding-top: $fd-11;
+    padding-left: $fd-11;
+    border: none;
+        &:focus{
+            outline: none;
+        }
+
+        }
+        .form__button{
+            position: relative;
+            button{
+                position: absolute;
+                left: 60%;
+            }
+        }
+
+    }
+    @include responsive("screen"){
+        width: 90%;
+    }
+    @media screen and (max-width:1198.98px){
+    .form__bottom{
+        textarea{
+            width: 80vw;
+        }
+    }
+   } 
+} 
+}
+// Gray
+.gray{
+    width: 100%;
+    height: 465px;
+    background-color: $color-gray-1;
+    position: relative;
+    i{
+        color: $color-green-0;
+        font-size:$fs-3 + 2 ;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+}
+// FOOTER
+footer{
+    .footer__content{
+        margin-top: 0;
+    }
+} 

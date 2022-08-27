@@ -13,6 +13,12 @@
     padding: $pd-y $pd-x;
     cursor: pointer;
 }
+@mixin styleInput($color,$width,$pt, $pl, $pb, $pr){
+    background-color: $color;
+    width: $width;
+    
+    padding: $pt $pl $pb $pr;
+}
 @mixin responsive($screen){
     @if map-has-key($map:$breakpoint , $key:$screen ){
         $value : map-get($map:$breakpoint , $key: $screen );
@@ -28,6 +34,14 @@
     width: $height;
     height: $height;
     border-radius: 50%;
+    text-align: center;
+    line-height: $height;
+
+}
+@mixin icon($height){
+    width: $height;
+    height: $height;
+   
     text-align: center;
     line-height: $height;
 

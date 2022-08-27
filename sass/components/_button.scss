@@ -13,3 +13,17 @@
         padding-right:$fd-2 - 1 ;
     }
 }
+.button--blue{
+    color:$color-blue-0;
+    font-size: $fs-0;
+    font-weight: $fw-0;
+    background-color: $color-green-3;
+    padding: $fs-1 - 4 65px $fs-1 - 4  $fs-6 - 5;
+ width: 248px;
+ text-align: left;
+ border: none;
+ margin-bottom: $fs-0 - 5;
+ i{
+    padding-right: $fs-0;
+ }
+}
